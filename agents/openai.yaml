@@ -1,0 +1,7 @@
+interface:
+  display_name: "鸿蒙表达风格"
+  short_description: "仅显式引用时应用鸿蒙式宣传、口语与品牌化规范"
+  default_prompt: "使用 $hongmeng-skill 完成这项工作，并严格采用鸿蒙表达风格。"
+
+policy:
+  allow_implicit_invocation: false
