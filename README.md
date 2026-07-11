@@ -16,6 +16,28 @@
 使用 $hongmeng-skill 为这款应用制作一份发布会 PPT。
 ```
 
+## 多代理支持
+
+本仓库采用通用的 Agent Skills 目录结构：核心规则只写在根目录的 `SKILL.md`，可供 Codex、Claude Code 与 OpenCode 读取。运行以下脚本即可安装到对应工具的全局技能目录：
+
+```bash
+git clone https://github.com/cangyeone/hongmeng-skill.git
+cd hongmeng-skill
+./scripts/install.sh --agent codex
+./scripts/install.sh --agent claude
+./scripts/install.sh --agent opencode
+```
+
+默认安装位置如下：
+
+| 工具 | 默认全局位置 |
+| --- | --- |
+| Codex | `~/.codex/skills/hongmeng-skill` |
+| Claude Code | `~/.claude/skills/hongmeng-skill` |
+| OpenCode | `~/.config/opencode/skills/hongmeng-skill` |
+
+可用 `--destination <技能父目录>` 覆盖默认位置，例如将技能装到某个项目的 `.claude/skills` 或 `.opencode/skills` 目录。安装脚本不会覆盖已有目标；确认需要覆盖时再追加 `--force`。
+
 ## 能力
 
 - 在自然表达中适度加入“啊、是吧、这个、我们”等语气词。
