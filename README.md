@@ -23,9 +23,9 @@
 ```bash
 git clone https://github.com/cangyeone/hongmeng-skill.git
 cd hongmeng-skill
-./scripts/install.sh --agent codex
-./scripts/install.sh --agent claude
-./scripts/install.sh --agent opencode
+sh ./scripts/install.sh --agent codex
+sh ./scripts/install.sh --agent claude
+sh ./scripts/install.sh --agent opencode
 ```
 
 默认安装位置如下：
